@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STREETSPECX</title>
+    <link rel="stylesheet" href="contact.css" />
+
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-logo">StreetSpecX</div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="login.html"><button class="login-btn">Login</button></a>
+          </li>
+        </ul>
+
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <!-- ===== CONTACT ===== -->
+    <section class="contact-section" id="contact">
+      <h2>Contact Us</h2>
+      <p class="contact-intro">
+        We'd love to hear from you. Reach out for support, sales, or general
+        inquiries.
+      </p>
+
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form-box">
+          <h3>Send a Message</h3>
+          <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+            <button type="submit" class="started">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-box">
+          <h3>Contact Information</h3>
+
+          <div class="info-block">
+            <h4>Email Address(es)</h4>
+            <p><strong>Support:</strong> support@streetspecx.com</p>
+            <p><strong>Sales:</strong> sales@streetspecx.com</p>
+            <p><strong>General:</strong> hello@streetspecx.com</p>
+          </div>
+
+          <div class="info-block">
+            <h4>Phone Numbers</h4>
+            <p><strong>Main:</strong> +1 (800) 555-0199</p>
+            <p><strong>Support:</strong> +1 (800) 555-0147</p>
+            <p><strong>Hours:</strong> Mon - Sat, 9:00 AM - 6:00 PM</p>
+          </div>
+
+          <div class="info-block">
+            <h4>Office Address</h4>
+            <p>
+              StreetSpecX HQ<br />
+              245 Urban Avenue, Suite 12<br />
+              Los Angeles, CA 90001<br />
+              United States
+            </p>
+          </div>
+
+          <div class="info-block">
+            <h4>Support Links</h4>
+            <p><a href="#">FAQs</a></p>
+            <p><a href="#">Help Center</a></p>
+            <p><a href="#">Live Chat</a></p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Embed -->
+      <div class="map-box">
+        <h3>Find Us</h3>
+        <iframe
+          src="https://www.google.com/maps?q=Los+Angeles,+CA&output=embed"
+          width="100%"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <h3>StreetSpecX</h3>
+      <p>Stay connected with us</p>
+
+      <div class="socials">
+        <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:hello@streetspecx.com" class="icon gmail"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a href="#" class="icon x"><i class="fab fa-x-twitter"></i></a>
+      </div>
+
+      <p class="copyright">© 2026 StreetSpecX. All rights reserved.</p>
+    </footer>
+
+    <!-- ===== JS ===== -->
+    <script>
+      // Hamburger toggle
+      const toggle = document.getElementById("menuToggle");
+      const nav = document.getElementById("navLinks");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+
+      // Social icons scroll reveal
+      const socials = document.querySelector(".socials");
+
+      function revealSocials() {
+        const trigger = window.innerHeight * 0.8;
+        const top = socials.getBoundingClientRect().top;
+
+        if (top < trigger) {
+          socials.classList.add("show");
+        }
+      }
+
+      window.addEventListener("scroll", revealSocials);
+      revealSocials();
+    </script>
+  </body>
+</html>

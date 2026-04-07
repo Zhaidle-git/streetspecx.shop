@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreetSpecX | Shop</title>
+    <link rel="stylesheet" href="shop.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-logo">StreetSpecX</div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="login.html"><button class="login-btn">Login</button></a>
+          </li>
+        </ul>
+
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== MAIN SHOP ===== -->
+    <main class="shop-page">
+      <!-- Promo Banner -->
+      <section class="promo-banner">
+        <h1>Streetwear Deals Up To 40% Off</h1>
+        <p>Fresh fits. Bold style. Limited-time offers on selected items.</p>
+      </section>
+
+      <!-- Search + Filters -->
+      <section class="top-controls">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search products..." />
+        </div>
+
+        <div class="sort-filter">
+          <select>
+            <option>Sort by</option>
+            <option>Popularity</option>
+            <option>Newest</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+          </select>
+
+          <select>
+            <option>Filter</option>
+            <option>Under $50</option>
+            <option>$50 - $100</option>
+            <option>In Stock</option>
+            <option>Best Rated</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Content -->
+      <section class="shop-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="shop.html">Hoodies</a></li>
+            <li><a href="shop.html">T-Shirts</a></li>
+            <li><a href="shop.html">Jackets</a></li>
+            <li><a href="shop.html">Pants</a></li>
+            <li><a href="shop.html">Sneakers</a></li>
+            <li><a href="shop.html">Accessories</a></li>
+          </ul>
+
+          <div class="support-box">
+            <h4>Need Help?</h4>
+            <p>Chat with customer support for sizing, delivery, and orders.</p>
+            <button>Chat Support</button>
+          </div>
+        </aside>
+
+        <!-- Products -->
+        <section class="products-section">
+          <div class="products-grid">
+            <!-- Product 1 -->
+            <article class="product-card">
+              <button class="wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="T shirt.png" alt="Urban Oversized Hoodie" />
+              <h2>Urban Oversized Hoodie</h2>
+              <div class="price-box">
+                <span class="price">$49.99</span>
+                <span class="old-price">$69.99</span>
+              </div>
+              <p class="description">
+                Premium cotton hoodie with oversized fit, soft lining, and
+                durable print.
+              </p>
+
+              <div class="rating-stock">
+                <span class="rating">★★★★★ (0 reviews)</span>
+                <span class="stock in-stock">In Stock</span>
+              </div>
+
+              <div class="product-options">
+                <label>Size</label>
+                <select>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                </select>
+
+                <label>Color</label>
+                <select>
+                  <option>Black</option>
+                  <option>Blue</option>
+                  <option>White</option>
+                </select>
+
+                <label>Quantity</label>
+                <input type="number" value="1" min="1" />
+              </div>
+
+              <div class="shipping-info">
+                <p><strong>Shipping:</strong> 3-5 business days | $4.99</p>
+                <p><strong>Returns:</strong> 7-day easy refund policy</p>
+              </div>
+
+              <div class="product-actions">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card">
+              <button class="wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img
+                src="https://via.placeholder.com/300x320"
+                alt="Street Core Jacket"
+              />
+              <h2>Street Core Jacket</h2>
+              <div class="price-box">
+                <span class="price">$89.99</span>
+              </div>
+              <p class="description">
+                Lightweight street jacket with zip closure, side pockets, and
+                bold modern fit.
+              </p>
+
+              <div class="rating-stock">
+                <span class="rating">★★★★☆ (0 reviews)</span>
+                <span class="stock in-stock">In Stock</span>
+              </div>
+
+              <div class="product-options">
+                <label>Size</label>
+                <select>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                </select>
+
+                <label>Color</label>
+                <select>
+                  <option>Black</option>
+                  <option>Gray</option>
+                </select>
+
+                <label>Quantity</label>
+                <input type="number" value="1" min="1" />
+              </div>
+
+              <div class="shipping-info">
+                <p><strong>Shipping:</strong> 2-4 business days | Free</p>
+                <p><strong>Returns:</strong> 14-day return guarantee</p>
+              </div>
+
+              <div class="product-actions">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card">
+              <button class="wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img
+                src="https://via.placeholder.com/300x320"
+                alt="SpecX Graphic Tee"
+              />
+              <h2>SpecX Graphic Tee</h2>
+              <div class="price-box">
+                <span class="price">$29.99</span>
+                <span class="old-price">$39.99</span>
+              </div>
+              <p class="description">
+                Soft-fit graphic tee made for everyday wear with bold
+                StreetSpecX branding.
+              </p>
+
+              <div class="rating-stock">
+                <span class="rating">★★★★★ (0 reviews)</span>
+                <span class="stock out-stock">Out of Stock</span>
+              </div>
+
+              <div class="product-options">
+                <label>Size</label>
+                <select>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+
+                <label>Color</label>
+                <select>
+                  <option>White</option>
+                  <option>Black</option>
+                </select>
+
+                <label>Quantity</label>
+                <input type="number" value="1" min="1" />
+              </div>
+
+              <div class="shipping-info">
+                <p><strong>Shipping:</strong> Restock soon</p>
+                <p><strong>Returns:</strong> Refund available within 7 days</p>
+              </div>
+
+              <div class="product-actions">
+                <button class="cart-btn" disabled>Add to Cart</button>
+                <button class="buy-btn" disabled>Buy Now</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Related Products -->
+          <section class="related-products">
+            <h3>Recommended for You</h3>
+            <div class="related-grid">
+              <div class="related-card">
+                <img src="https://via.placeholder.com/180x180" alt="Sneakers" />
+                <h4>Street Runner Sneakers</h4>
+                <p>$74.99</p>
+              </div>
+
+              <div class="related-card">
+                <img src="https://via.placeholder.com/180x180" alt="Cap" />
+                <h4>SpecX Signature Cap</h4>
+                <p>$19.99</p>
+              </div>
+
+              <div class="related-card">
+                <img
+                  src="https://via.placeholder.com/180x180"
+                  alt="Cargo Pants"
+                />
+                <h4>Urban Cargo Pants</h4>
+                <p>$54.99</p>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <h3>StreetSpecX</h3>
+      <p>Stay connected with us</p>
+
+      <div class="socials">
+        <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:your@email.com" class="icon gmail">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="#" class="icon x"><i class="fab fa-x-twitter"></i></a>
+      </div>
+
+      <p class="copyright">© 2026 StreetSpecX. All rights reserved.</p>
+    </footer>
+
+    <!-- ===== JS ===== -->
+    <script>
+      const toggle = document.getElementById("menuToggle");
+      const nav = document.getElementById("navLinks");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+
+      const socials = document.querySelector(".socials");
+
+      function revealSocials() {
+        const trigger = window.innerHeight * 0.8;
+        const top = socials.getBoundingClientRect().top;
+
+        if (top < trigger) {
+          socials.classList.add("show");
+        }
+      }
+
+      window.addEventListener("scroll", revealSocials);
+      revealSocials();
+    </script>
+  </body>
+</html>

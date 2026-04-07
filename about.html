@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | StreetSpecX</title>
+    <link rel="stylesheet" href="about.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ===== HEADER (UNCHANGED) ===== -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-logo">StreetSpecX</div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="login.html"><button class="login-btn">Login</button></a>
+          </li>
+        </ul>
+
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <main class="about-container">
+      <div class="about-content">
+        <h1>About StreetSpecX</h1>
+        <p>
+          StreetSpecX is built for individuals who move with confidence and
+          express themselves through style. Our brand blends street culture with
+          modern design to create pieces that stand out without compromise.
+        </p>
+
+        <!-- 1. Mission -->
+        <div class="about-box">
+          <h2>Our Mission</h2>
+          <p>
+            Our mission is to empower individuals through fashion that speaks
+            confidence, authenticity, and bold self-expression in every
+            environment.
+          </p>
+        </div>
+
+        <!-- 2. Customer -->
+        <div class="about-box">
+          <h2>Our Commitment to You</h2>
+          <p>
+            Every piece we create is designed with you in mind — comfort,
+            durability, and standout style that fits your everyday life.
+          </p>
+        </div>
+
+        <!-- 3. Vision -->
+        <div class="about-box">
+          <h2>Our Vision</h2>
+          <p>
+            We aim to redefine streetwear by pushing boundaries and shaping the
+            future of urban fashion across the world.
+          </p>
+        </div>
+
+        <!-- 4. Personal -->
+        <div class="about-box">
+          <h2>Our Story</h2>
+          <p>
+            StreetSpecX started with a simple idea — create clothing that feels
+            real. What began as a passion has grown into a movement driven by
+            creativity and community.
+          </p>
+        </div>
+
+        <!-- 5. CTA -->
+        <div class="about-box cta">
+          <h2>Join the Movement</h2>
+          <p>
+            Be part of StreetSpecX and express your style with confidence. The
+            streets are your runway.
+          </p>
+          <a href="shop.html" class="cta-btn">Shop Now</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- ===== FOOTER (UNCHANGED) ===== -->
+    <footer class="footer">
+      <h3>StreetSpecX</h3>
+      <p>Stay connected with us</p>
+
+      <div class="socials">
+        <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon gmail"><i class="fas fa-envelope"></i></a>
+        <a href="#" class="icon x"><i class="fab fa-x-twitter"></i></a>
+      </div>
+
+      <p class="copyright">© 2026 StreetSpecX. All rights reserved.</p>
+    </footer>
+
+    <!-- ===== JS (UNCHANGED) ===== -->
+    <script>
+      // Hamburger toggle
+      const toggle = document.getElementById("menuToggle");
+      const nav = document.getElementById("navLinks");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+
+      // Social icons scroll reveal
+      const socials = document.querySelector(".socials");
+
+      function revealSocials() {
+        const trigger = window.innerHeight * 0.8;
+        const top = socials.getBoundingClientRect().top;
+
+        if (top < trigger) {
+          socials.classList.add("show");
+        }
+      }
+
+      window.addEventListener("load", revealSocials);
+      window.addEventListener("scroll", revealSocials);
+    </script>
+  </body>
+</html>
